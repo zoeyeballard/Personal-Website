@@ -28,6 +28,7 @@ body {
   padding: 14px 16px;
   text-decoration: none;
   font-size: 17px;
+  font-family: arial;
 }
 
 /* Change the color of links on hover */
@@ -42,24 +43,31 @@ body {
   color: white;
 }
 
+/* NOTE: Add containers around everything to organize it better!!!! */
+
 h1 {
   color: white;
+  font-family: arial;
 }
 
 h2 {
   color: white;
+  font-family: arial;  
 }
 
 h3 {
   color: white;
+  font-family: arial;  
 }
 
 h4 {
   color: white;
+  font-family: arial;
 }
 
 p {
   color: white;
+  font-family: arial;  
 }
 /*TODO: Create a new style rule by the class attribute and style the header section(s) of your website. */
 
