@@ -1,19 +1,19 @@
 /*TODO: Add a background color or image to your website*/
 body {
- background-color: white #967bb6; 
+ background-color: #000000; #967bb6
 }
 
 
 h1 {
-  color: navy;
+  color: white;
 }
 
 h2 {
-  color: navy;
+  color: white;
 }
 
 h3 {
-  color: navy;
+  color: white;
 }
 /*TODO: Create a new style rule by the class attribute and style the header section(s) of your website. */
 
