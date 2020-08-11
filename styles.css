@@ -1,7 +1,10 @@
 /*TODO: Add a background color or image to your website*/
 body {
- background-color: #000000; #967bb6
- color: white;
+  font-family: 'Arial', sans-serif;
+  text-align: center;
+  color: #003046;
+  /* ------ Extension: Make the background a gradient ------ */
+  background-color: #000000;
 }
 
 /* Getting Rid of Margins??? */
@@ -28,7 +31,7 @@ body {
 /* Headings??? */
 h1 {
   /* ------ Extension: Fancy Font ------ */
-  font-family: 'Pacifico', cursive;
+  font-family: 'Pacifico',cursive;
   font-size: 3em;
   padding-top: 1em;
   padding-bottom: 1em;
@@ -36,23 +39,24 @@ h1 {
 
 h2 {
   color: white;
-  font-family: arial;  
+  font-family: 'Pacifico',cursive;  
 }
 
 h3 {
   color: white;
-  font-family: arial;  
+  font-family: 'Pacifico',cursive;  
 }
 
 h4 {
   color: white;
-  font-family: arial;
+  font-family: 'Pacifico',cursive;
 }
 
 p {
   color: white;
-  font-family: arial;  
+  font-family: 'Pacifico',cursive;  
 }
+
 
 /* NAVIGATION BAR?? */
 
