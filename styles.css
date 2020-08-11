@@ -4,6 +4,11 @@ body {
  color: white;
 }
 
+* {
+  margin: 0.5px;
+  padding: 0.5px;
+}
+
 /* Add a black background color to the top navigation */
 .topnav {
   background-color: #333;
