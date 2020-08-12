@@ -23,14 +23,13 @@ body {
 /* Stylizing Home/Intro Page */
 #Picture-of-Me {
   border-radius: 50%;
-  max-height: 250px;
+  max-height: 340px;
   margin-bottom: 2em;
   border: 3px solid #967bb6;
 }
 
 /* Headings??? */
 h1 {
-  /* ------ Extension: Fancy Font ------ */
   font-family: 'Pacifico',cursive;
   font-size: 3em;
   padding-top: 1em;
