@@ -40,21 +40,56 @@ h1 {
 h2 {
   color: white;
   font-family: 'Pacifico',cursive;  
+  padding-top: 1em;
+  padding-bottom: 1em;
 }
 
 h3 {
   color: white;
   font-family: 'Pacifico',cursive;  
+  padding-top: 1em;
+  padding-bottom: 1em;
 }
 
 h4 {
   color: white;
   font-family: 'Pacifico',cursive;
+  padding-top: 1em;
+  padding-bottom: 1em;
 }
 
 p {
   color: white;
   font-family: 'Pacifico',cursive;  
+  padding-top: 1em;
+  padding-bottom: 1em;
+}
+
+.intro-text {
+  margin: 0 auto;
+  max-width: 70%;
+}
+
+
+/* ------ Styling the portfolio images ------ */
+.port-img {
+  border-radius: 10%;
+  max-height: 20em;
+  border: 3px solid white;
+}
+
+
+/* ------ Flexbox styling for Portfolio ------ */
+.container {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+.project {
+  padding-top: 2em;
+  padding-bottom: 1em;
 }
 
 
