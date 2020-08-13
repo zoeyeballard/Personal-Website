@@ -1,6 +1,6 @@
 /*TODO: Add a background color or image to your website*/
 body {
-  font-family: 'Arial', sans-serif;
+  font-family: 'Courier New', Courier, monospace;  
   text-align: center;
   color: #003046;
   /* ------ Extension: Make the background a gradient ------ */
@@ -49,7 +49,7 @@ body {
 
 /* Headings??? */
 h1 {
-  font-family: 'Pacifico',cursive;
+  font-family: 'Courier New', Courier, monospace;  
   font-size: 3em;
   padding-top: 1em;
   padding-bottom: 1em;
@@ -57,28 +57,28 @@ h1 {
 
 h2 {
   color: white;
-  font-family: 'Pacifico',cursive;  
+  font-family: 'Courier New', Courier, monospace;  
   padding-top: 1em;
   padding-bottom: 1em;
 }
 
 h3 {
   color: white;
-  font-family: 'Pacifico',cursive;  
+  font-family: 'Courier New', Courier, monospace;  
   padding-top: 1em;
   padding-bottom: 1em;
 }
 
 h4 {
   color: white;
-  font-family: 'Pacifico',cursive;
+  font-family: 'Courier New', Courier, monospace;  
   padding-top: 1em;
   padding-bottom: 1em;
 }
 
 p {
   color: white;
-  font-family: 'Pacifico',cursive;  
+  font-family: 'Courier New', Courier, monospace;  
   padding-top: 1em;
   padding-bottom: 1em;
 }
@@ -131,6 +131,7 @@ li:last-child {
 
 li a {
   color: white;
+  font-family: 'Courier New', Courier, monospace;  
   text-decoration: none;
   text-align: center; /*This rule is not needed if you apply it to the body element*/
   padding: 1em;
