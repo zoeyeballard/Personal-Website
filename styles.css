@@ -4,7 +4,8 @@ body {
   text-align: center;
   color: #003046;
   /* ------ Extension: Make the background a gradient ------ */
-  background-image: linear-gradient(#333, #000000);
+  background-color:#000000;
+/*   background-image: linear-gradient(#333, #000000); */
 }
 
 /* Getting Rid of Margins??? */
@@ -96,12 +97,12 @@ p {
   border: 10px ridge white;
 }
 
-.blog-img {
+/* .blog-img {
   border-radius: 10%;
   max-height: 20em;
   border-width:360;
   border: 10px ridge white;
-}
+} */
 
 /* ------ Flexbox styling for Portfolio ------ */
 .container {
@@ -129,7 +130,8 @@ p {
 ul {
   list-style-type: none;
   padding: 1em;
-  background-color: #333;
+  background-color: #b380ff;
+/*   background-color: #944dff; */
   overflow: hidden;
 }
 
@@ -152,7 +154,7 @@ li a {
 }
 
 li a:hover {
-  background-color: #944dff;
+  background-color: #a366ff;
 }
 /*TODO: Create a new style rule by the class attribute and style the header section(s) of your website. */
 
