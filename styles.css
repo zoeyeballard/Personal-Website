@@ -4,7 +4,7 @@ body {
   text-align: center;
   color: #003046;
   /* ------ Extension: Make the background a gradient ------ */
-  background-color: #000000;
+  background-image: linear-gradient(#333, #000000);
 }
 
 /* Getting Rid of Margins??? */
@@ -16,7 +16,7 @@ body {
 /* Stylizing header??? */
 .header {
   /* ------ Extension: Make the header background a gradient ------ */
-  background-image: linear-gradient(#FFFFFF,#333);
+  background-image: url("https://cdn.glitch.com/1ab8c557-9e37-4693-83aa-c77e3b7fce4f%2FScreenshot%202020-08-12%20at%204.06.53%20PM.png?v=1597377543502");
   color: white;
 }
 
@@ -96,6 +96,12 @@ p {
   border: 10px ridge white;
 }
 
+.blog-img {
+  border-radius: 10%;
+  max-height: 20em;
+  border-width:360;
+  border: 10px ridge white;
+}
 
 /* ------ Flexbox styling for Portfolio ------ */
 .container {
