@@ -110,6 +110,13 @@ p {
   padding-bottom: 1em;
 }
 
+.center {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+}
+
 
 /* NAVIGATION BAR?? */
 
