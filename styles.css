@@ -97,6 +97,12 @@ p {
   border: 10px ridge white;
 }
 
+iframe {
+  border-radius: 10%;
+  max-height: 20em;
+  border: 10px ridge white;
+}
+
 /* .blog-img {
   border-radius: 10%;
   max-height: 20em;
