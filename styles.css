@@ -4,8 +4,15 @@ body {
   text-align: center;
   color: #003046;
   /* ------ Extension: Make the background a gradient ------ */
-  background-color:#000000;
-/*   background-image: linear-gradient(#333, #000000); */
+ /* background-color:#000000; */
+}
+
+.pages {
+  background-image: linear-gradient(#3E1E68, #FFACAC);
+}
+
+html {
+  background-image: linear-gradient(#3E1E68, #3E1E68);
 }
 
 /* Getting Rid of Margins??? */
@@ -17,8 +24,9 @@ body {
 /* Stylizing header??? */
 .header {
   /* ------ Extension: Make the header background a gradient ------ */
-  background-image: url("https://cdn.glitch.com/1ab8c557-9e37-4693-83aa-c77e3b7fce4f%2FScreenshot%202020-08-12%20at%204.06.53%20PM.png?v=1597377543502");
+  text-align: center;
   color: white;
+  font-size: 1em;
 }
 
 /* Stylizing Home/Intro Page */
@@ -36,14 +44,14 @@ body {
   border: 6px ridge #d1b3ff;
 }
 
-#medibang {
+#linkedIN {
   border-radius: 50%;
   max-height: 340px;
   margin-bottom: 2em;
   border: 6px ridge #d1b3ff;
 }
 
-#spotify {
+#replit {
   border-radius: 50%;
   max-height: 340px;
   margin-bottom: 2em;
@@ -66,13 +74,15 @@ body {
   }
   
   to {
-    text-shadow: 0 0 20px #fff, 0 0 30px #d1b3ff, 0 0 40px #d1b3ff, 0 0 50px #d1b3ff, 0 0 60px #d1b3ff, 0 0 70px #d1b3ff, 0 0 80px #d1b3ff;
+    text-shadow: 0 0 15px #fff, 0 0 25px #d1b3ff, 0 0 35px #d1b3ff, 0 0 45px #d1b3ff, 0 0 55px #d1b3ff, 0 0 65px #d1b3ff, 0 0 75px #d1b3ff;
   }
 }
 
 /* Headings??? */
 h1 {
-  font-family: 'Courier New', Courier, monospace;  
+  font-family: "Unica One", sans-serif;
+  font-weight: 400;
+  font-style: normal;
   font-size: 3em;
   padding-top: 1em;
   padding-bottom: 1em;
@@ -80,28 +90,36 @@ h1 {
 
 h2 {
   color: white;
-  font-family: 'Courier New', Courier, monospace;  
+  font-family: "Ubuntu", sans-serif;
+  font-weight: 700;
+  font-style: normal;  
   padding-top: 1em;
   padding-bottom: 1em;
 }
 
 h3 {
   color: white;
-  font-family: 'Courier New', Courier, monospace;  
+  font-family: "Ubuntu", sans-serif;
+  font-weight: 500;
+  font-style: normal;
   padding-top: 1em;
   padding-bottom: 1em;
 }
 
 h4 {
   color: white;
-  font-family: 'Courier New', Courier, monospace;  
-  padding-top: 1em;
+  font-family: "Ubuntu", sans-serif;
+  font-weight: 400;
+  font-style: normal; 
+  padding-top: 0em;
   padding-bottom: 1em;
 }
 
 p {
   color: white;
-  font-family: 'Courier New', Courier, monospace;  
+  font-family: "Ubuntu", sans-serif;
+  font-weight: 300;
+  font-style: normal; 
   padding-top: 1em;
   padding-bottom: 1em;
 }
@@ -165,14 +183,14 @@ iframe {
 ul {
   list-style-type: none;
   padding: 1em;
-  background-color: #b380ff;
+/*  background-color: #b380ff; */
 /*   background-color: #944dff; */
   overflow: hidden;
 }
 
 li {
   display: inline;
-  border-right: 2px solid white;
+  border-right: 1.5px solid white;
 }
 
 li:last-child {
@@ -181,20 +199,374 @@ li:last-child {
 
 li a {
   color: white;
-  font-family: 'Courier New', Courier, monospace;  
   text-decoration: none;
   text-align: center; /*This rule is not needed if you apply it to the body element*/
   padding: 1em;
   font-size: 1.3em;
 }
 
-li a:hover {
-  background-color: #a366ff;
+
+.hoverUnderlineAnimation {
+  display: inline-block;
+  position: relative;
 }
-/*TODO: Create a new style rule by the class attribute and style the header section(s) of your website. */
 
-/*TODO: Use the * selector to reset the margin and padding to 0px*/
+.hoverUnderlineAnimation:after {
+  content: '';
+  position: absolute;
+  width: 100%;
+  transform: scaleX(0);
+  height: 3px;
+  bottom: 0;
+  left: 0;
+  background-color: #ffff;
+  transform-origin: bottom center;
+  transition: transform 0.25s ease-out;
+}
 
-/*TODO: Add styling rules for the text and images on your website.*/
+.hoverUnderlineAnimation:hover:after {
+  transform: scaleX(1);
+  transform-origin: bottom center;
+}
 
-/*TODO: Create a Flexbox to create a responsive layout. Use the property display: flex;/ 
+* {box-sizing: border-box;}
+body {font-family: Verdana, sans-serif;}
+.mySlides {display: none;}
+img {vertical-align: middle;}
+
+/* Slideshow container */
+.slideshow-container {
+  max-width: 650px;
+  position: relative;
+  margin: auto;
+}
+
+/* Caption text */
+.text {
+  color: #f2f2f2;
+  font-size: 15px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active {
+  background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+  animation-name: fade;
+  animation-duration: 2s;
+}
+
+@keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+/* On smaller screens, decrease text size */
+@media only screen and (max-width: 300px) {
+  .text {font-size: 11px}
+}
+
+.slidesIMG {
+  border-radius: 10%;
+  max-height: 20em;
+  border: 10px ridge white;
+}
+
+@keyframes move {
+    100% {
+        transform: translate3d(0, 0, 1px) rotate(360deg);
+    }
+}
+
+.background {
+    position: fixed;
+    width: 100vw;
+    height: 100vh;
+    top: 0;
+    left: 0;
+    background: #3E1E68;
+    overflow: hidden;
+}
+
+.background span {
+    width: 20vmin;
+    height: 20vmin;
+    border-radius: 20vmin;
+    backface-visibility: hidden;
+    position: absolute;
+    animation: move;
+    animation-duration: 45;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+}
+
+
+.background span:nth-child(0) {
+    color: #583C87;
+    top: 1%;
+    left: 57%;
+    animation-duration: 16s;
+    animation-delay: -14s;
+    transform-origin: -24vw -23vh;
+    box-shadow: -40vmin 0 5.091769822500548vmin currentColor;
+}
+.background span:nth-child(1) {
+    color: #FFACAC;
+    top: 8%;
+    left: 54%;
+    animation-duration: 36s;
+    animation-delay: -19s;
+    transform-origin: 8vw -15vh;
+    box-shadow: 40vmin 0 5.14473064810186vmin currentColor;
+}
+.background span:nth-child(2) {
+    color: #FFACAC;
+    top: 40%;
+    left: 4%;
+    animation-duration: 26s;
+    animation-delay: -34s;
+    transform-origin: -5vw 22vh;
+    box-shadow: 40vmin 0 5.871348895464026vmin currentColor;
+}
+.background span:nth-child(3) {
+    color: #583C87;
+    top: 86%;
+    left: 85%;
+    animation-duration: 27s;
+    animation-delay: -19s;
+    transform-origin: -18vw -21vh;
+    box-shadow: -40vmin 0 5.215853574707184vmin currentColor;
+}
+.background span:nth-child(4) {
+    color: #FFACAC;
+    top: 49%;
+    left: 37%;
+    animation-duration: 33s;
+    animation-delay: -40s;
+    transform-origin: 7vw 9vh;
+    box-shadow: -40vmin 0 5.614546485706509vmin currentColor;
+}
+.background span:nth-child(5) {
+    color: #E45A84;
+    top: 62%;
+    left: 63%;
+    animation-duration: 13s;
+    animation-delay: -43s;
+    transform-origin: -18vw 16vh;
+    box-shadow: 40vmin 0 5.646476064260409vmin currentColor;
+}
+.background span:nth-child(6) {
+    color: #E45A84;
+    top: 83%;
+    left: 48%;
+    animation-duration: 30s;
+    animation-delay: -9s;
+    transform-origin: 7vw -10vh;
+    box-shadow: 40vmin 0 5.938632981448203vmin currentColor;
+}
+.background span:nth-child(7) {
+    color: #E45A84;
+    top: 23%;
+    left: 81%;
+    animation-duration: 45s;
+    animation-delay: -12s;
+    transform-origin: 8vw -16vh;
+    box-shadow: -40vmin 0 5.165001470362813vmin currentColor;
+}
+.background span:nth-child(8) {
+    color: #583C87;
+    top: 77%;
+    left: 6%;
+    animation-duration: 34s;
+    animation-delay: -11s;
+    transform-origin: 8vw -16vh;
+    box-shadow: 40vmin 0 5.80783048436319vmin currentColor;
+}
+.background span:nth-child(9) {
+    color: #583C87;
+    top: 69%;
+    left: 19%;
+    animation-duration: 43s;
+    animation-delay: -37s;
+    transform-origin: -7vw 12vh;
+    box-shadow: -40vmin 0 5.122921821284713vmin currentColor;
+}
+.background span:nth-child(10) {
+    color: #FFACAC;
+    top: 69%;
+    left: 33%;
+    animation-duration: 14s;
+    animation-delay: -37s;
+    transform-origin: -3vw 10vh;
+    box-shadow: -40vmin 0 5.86495983674133vmin currentColor;
+}
+.background span:nth-child(11) {
+    color: #FFACAC;
+    top: 26%;
+    left: 10%;
+    animation-duration: 31s;
+    animation-delay: -15s;
+    transform-origin: 19vw 22vh;
+    box-shadow: -40vmin 0 5.407331274425855vmin currentColor;
+}
+.background span:nth-child(12) {
+    color: #583C87;
+    top: 55%;
+    left: 12%;
+    animation-duration: 25s;
+    animation-delay: -4s;
+    transform-origin: 25vw 16vh;
+    box-shadow: -40vmin 0 5.295150216875842vmin currentColor;
+}
+.background span:nth-child(13) {
+    color: #E45A84;
+    top: 59%;
+    left: 71%;
+    animation-duration: 23s;
+    animation-delay: -6s;
+    transform-origin: -12vw 10vh;
+    box-shadow: 40vmin 0 5.9348913579881755vmin currentColor;
+}
+.background span:nth-child(14) {
+    color: #583C87;
+    top: 11%;
+    left: 36%;
+    animation-duration: 37s;
+    animation-delay: -26s;
+    transform-origin: 1vw -5vh;
+    box-shadow: -40vmin 0 5.194575407300166vmin currentColor;
+}
+.background span:nth-child(15) {
+    color: #583C87;
+    top: 34%;
+    left: 11%;
+    animation-duration: 17s;
+    animation-delay: -33s;
+    transform-origin: 18vw 10vh;
+    box-shadow: -40vmin 0 5.5473464600934825vmin currentColor;
+}
+.background span:nth-child(16) {
+    color: #E45A84;
+    top: 100%;
+    left: 3%;
+    animation-duration: 51s;
+    animation-delay: -35s;
+    transform-origin: -7vw 8vh;
+    box-shadow: 40vmin 0 5.283754551998738vmin currentColor;
+}
+.background span:nth-child(17) {
+    color: #FFACAC;
+    top: 82%;
+    left: 55%;
+    animation-duration: 27s;
+    animation-delay: -13s;
+    transform-origin: -21vw 0vh;
+    box-shadow: -40vmin 0 5.508801095120681vmin currentColor;
+}
+.background span:nth-child(18) {
+    color: #583C87;
+    top: 41%;
+    left: 26%;
+    animation-duration: 42s;
+    animation-delay: -15s;
+    transform-origin: 2vw -23vh;
+    box-shadow: -40vmin 0 5.94110542444934vmin currentColor;
+}
+.background span:nth-child(19) {
+    color: #583C87;
+    top: 100%;
+    left: 31%;
+    animation-duration: 46s;
+    animation-delay: -12s;
+    transform-origin: -7vw -8vh;
+    box-shadow: -40vmin 0 5.69174000263296vmin currentColor;
+}
+
+.box{
+  display: flex;
+  align-items: center;
+  width: 100%;
+  height: 100vh;
+  justify-content: center;
+}
+
+.overlay-text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 1000; /* Ensure it's on top of the animation */
+  color: white;
+  font-size: 2em;
+  /*font-weight: bold;*/
+}
+
+/* Add animation to "page content" */
+.animate-bottom {
+  position: relative;
+  -webkit-animation-name: animatebottom;
+  -webkit-animation-duration: 1s;
+  animation-name: animatebottom;
+  animation-duration: 1s
+}
+
+@-webkit-keyframes animatebottom {
+  from { bottom:-100px; opacity:0 } 
+  to { bottom:0px; opacity:1 }
+}
+
+@keyframes animatebottom { 
+  from{ bottom:-100px; opacity:0 } 
+  to{ bottom:0; opacity:1 }
+}
+
+#loader {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  z-index: 1;
+  width: 120px;
+  height: 120px;
+  margin: -76px 0 0 -76px;
+  border: 16px solid #f3f3f3;
+  border-radius: 50%;
+  border-top: 16px solid #3498db;
+  -webkit-animation: spin 2s linear infinite;
+  animation: spin 2s linear infinite;
+}
+
+@-webkit-keyframes spin {
+  0% { -webkit-transform: rotate(0deg); }
+  100% { -webkit-transform: rotate(360deg); }
+}
+
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
