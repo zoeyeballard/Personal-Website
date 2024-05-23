@@ -34,28 +34,35 @@ html {
   border-radius: 50%;
   max-height: 340px;
   margin-bottom: 2em;
-  border: 12px ridge #d1b3ff;
+  border: 12px outset #d1b3ff;
 }
 
 #github {
   border-radius: 50%;
   max-height: 340px;
   margin-bottom: 2em;
-  border: 6px ridge #d1b3ff;
+  border: 6px outset #d1b3ff;
 }
 
 #linkedIN {
   border-radius: 50%;
   max-height: 340px;
   margin-bottom: 2em;
-  border: 6px ridge #d1b3ff;
+  border: 6px outset #d1b3ff;
 }
 
 #replit {
   border-radius: 50%;
   max-height: 340px;
   margin-bottom: 2em;
-  border: 6px ridge #d1b3ff;
+  border: 6px outset #d1b3ff;
+}
+
+#medibang {
+  border-radius: 50%;
+  max-height: 340px;
+  margin-bottom: 2em;
+  border: 6px outset #d1b3ff;
 }
 
 
@@ -134,13 +141,13 @@ p {
 .port-img {
   border-radius: 10%;
   max-height: 20em;
-  border: 10px ridge white;
+  border: 10px outset white;
 }
 
 iframe {
   border-radius: 10%;
   max-height: 20em;
-  border: 10px ridge white;
+  border: 10px outset white;
 }
 
 /* .blog-img {
