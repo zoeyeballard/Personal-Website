@@ -3,4 +3,4 @@
 This is where I am currently improving upon my personal portfolio page, and updating it.
 
 CURRENTLY
-<< HTML, CSS >> 
+<< HTML, CSS, JS >> 
