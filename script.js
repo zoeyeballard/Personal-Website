@@ -75,7 +75,7 @@ class Typewriter {
 }
 
 document.addEventListener("DOMContentLoaded", function() {
-    const phrases = ["engineer", "developer", "artist", "adventurer", "writer"];
+    const phrases = ["engineer", "developer", "artist"];
     const typewriter = new Typewriter("typewriter", phrases);
     typewriter.writeLoop();
 });
